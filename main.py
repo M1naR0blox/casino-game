@@ -33,3 +33,15 @@ def export_money():
     variacode.sleep(1)
     animations.custom_loading_animation("Depositing to bank", random.randint(1, 20))
 
+def big_text_that_says_casino():
+    print("CASINO")
+    print("A questionable game")
+    print("Made in Python")
+
+
+def start(game):
+    if game == "casino_game":
+        big_text_that_says_casino()
+        player_input = input("Start >>>")
+        if player_input == "yes" or player_input == "y" or player_input == "Yes":
+            place = 0
