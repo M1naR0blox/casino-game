@@ -6,6 +6,9 @@ import animations
 
 bank_money = 100
 casino_money = 0
+chances = 0
+chances1 = 0
+chances2 = 0
 
 def deposit(type):
     """Makes the user deposit the money
@@ -39,9 +42,22 @@ def big_text_that_says_casino():
     print("Made in Python")
 
 
-def start(game):
-    if game == "casino_game":
-        big_text_that_says_casino()
-        player_input = input("Start >>>")
+def start():
+    global chances
+    global chances1
+    global chances2
+    big_text_that_says_casino()
+    player_input = input("Start >>>")
+    game = True
+    while game == True:
         if player_input == "yes" or player_input == "y" or player_input == "Yes":
-            place = 0
+            print("WHERE TO GO NEXT?")
+            next = input("house, casino, work ")
+            if next == "work":
+                print("You already left there")
+            if next == "house":
+                print("we dont accept there, you left for the milk")
+            else:
+                chances = random.randint(1, 10)
+                chances1 = random.randint(1, 100)
+                chances2 = random.randint(1, 1000)
