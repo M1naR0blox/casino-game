@@ -1,2 +1,4 @@
 # casino-game
-soon updated
+# play on the terminal or idle
+soon will be updated
+
