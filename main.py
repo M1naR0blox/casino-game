@@ -58,6 +58,12 @@ def start():
             if next == "house":
                 print("we dont accept there, you left for the milk")
             else:
+                normal = random.randint(1, 5)
                 chances = random.randint(1, 10)
                 chances1 = random.randint(1, 100)
                 chances2 = random.randint(1, 1000)
+                if normal >= 1 and normal <= 5:
+                    print("Welcome to the Casino Jackpot Center!")
+                    print("Where would you like to go?")
+                    
+                
